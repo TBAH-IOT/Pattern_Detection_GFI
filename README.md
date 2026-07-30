@@ -3,7 +3,7 @@ Hướng dẫn Sử dụng (Usage Guide)
 Để mở ứng dụng quét mô hình trực quan trên trình duyệt:
 
 Bash
-streamlit run similar_pattern_V5.py
+streamlit run app.py
 Trình duyệt sẽ tự động mở tại địa chỉ: http://localhost:8501.
 
 Chức năng chính trên UI:
