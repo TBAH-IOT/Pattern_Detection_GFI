@@ -15,11 +15,9 @@ else:
     DATA_DIR = os.path.join(CURRENT_DIR, 'Data')
 
 TF_CSV_FILENAMES = {
-    '1m': os.path.join(DATA_DIR, 'data_btc_price_1m.csv'), 
     '15m': os.path.join(DATA_DIR, 'data_btc_price_15m.csv'),
     '1h': os.path.join(DATA_DIR, 'data_btc_price_1h.csv'), 
     '4h': os.path.join(DATA_DIR, 'data_btc_price_4h.csv'),
-    '1d': os.path.join(DATA_DIR, 'data_btc_price_1d.csv'),
 }
 # -------------------------------------------------------------
 
