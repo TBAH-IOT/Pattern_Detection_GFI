@@ -1,0 +1,51 @@
+  [i] (15m, Pivot Window): đo được 1130 lần pattern xuất hiện thật -> block_size = 33 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (15m, Pivot Window) — 1 pattern, n_boot=5000, block_size=33...
+  [i] (15m, ZigZag Limit): đo được 3859 lần pattern xuất hiện thật -> block_size = 38 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (15m, ZigZag Limit) — 7 pattern, n_boot=5000, block_size=38...
+  [i] (1h, EMA Peaks): đo được 62 lần pattern xuất hiện thật -> block_size = 12 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (1h, EMA Peaks) — 2 pattern, n_boot=5000, block_size=12...
+  [i] (1h, Pivot Window): đo được 327 lần pattern xuất hiện thật -> block_size = 29 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (1h, Pivot Window) — 2 pattern, n_boot=5000, block_size=29...
+  [i] (1h, ZigZag Limit): đo được 148 lần pattern xuất hiện thật -> block_size = 19 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (1h, ZigZag Limit) — 1 pattern, n_boot=5000, block_size=19...
+      [debug] 3731 cửa sổ đã quét, 0 không dò được đủ cực trị, 0 giá phẳng (bỏ qua), best_score: p90=0.778 max=0.901 (cần >= min_quality=0.88) -> hầu hết dưới ngưỡng, cân nhắc hạ span_min_quality nếu khung này hiếm pattern thật.
+  [!] (4h, Pivot Window): chỉ tìm được 13 lần pattern xuất hiện (chưa đủ mẫu) -> tạm dùng span_fallback=50 nến, KẾT QUẢ CALIBRATE CHO KHUNG NÀY KÉM TIN CẬY HƠN, nên tăng span_step nhỏ lại hoặc lấy thêm dữ liệu lịch sử.
+[*] Đang calibrate (4h, Pivot Window) — 1 pattern, n_boot=5000, block_size=50...
+  [i] (4h, ZigZag Limit): đo được 39 lần pattern xuất hiện thật -> block_size = 12 nến (thay vì 50 cứng dùng chung).
+[*] Đang calibrate (4h, ZigZag Limit) — 1 pattern, n_boot=5000, block_size=12...
+
+('15m', 'Pivot Window'): {
+    'Pennant_Bearish': {'sim_threshold': 0.9132},
+},
+
+('15m', 'ZigZag Limit'): {
+    'Head_and_Shoulders_Top': {'sim_threshold': 0.9375},
+    'Head_and_Shoulders_Bottom': {'sim_threshold': 0.9519},
+    'Double_Bottom': {'sim_threshold': 0.9107},
+    'Triple_Top': {'sim_threshold': 0.9315},
+    'Wedge_Falling': {'sim_threshold': 0.8928},
+    'Cup_and_Handle': {'sim_threshold': 0.9343},
+    'Triple_Bottom_Wide': {'sim_threshold': 0.9386},
+},
+
+('1h', 'EMA Peaks'): {
+    'Triangle_Ascending': {'sim_threshold': 0.8393},
+    'Diamond_Top': {'sim_threshold': 0.8869},
+},
+
+('1h', 'Pivot Window'): {
+    'Diamond_Top': {'sim_threshold': 0.8943},
+    'Broadening_Bottom': {'sim_threshold': 0.9041},
+},
+
+('1h', 'ZigZag Limit'): {
+    'Triple_Top_Wide': {'sim_threshold': 0.8757},
+},
+
+('4h', 'Pivot Window'): {
+    'Wedge_Rising': {'sim_threshold': 0.8816},
+},
+
+('4h', 'ZigZag Limit'): {
+    'Broadening_Bottom': {'sim_threshold': 0.8794},
+},
