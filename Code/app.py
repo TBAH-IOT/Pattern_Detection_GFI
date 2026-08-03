@@ -3,17 +3,6 @@ import pandas as pd
 import os
 import plotly.graph_objects as go
 
-# ==========================================
-# "NÃO" CỦA HỆ THỐNG -> LẤY TỪ pattern_engine.py (đúng logic của V4)
-# ==========================================
-# File này KHÔNG còn tự định nghĩa PatternMatcher/WIN_RATE_BY_TF_METHOD riêng
-# nữa (bản cũ dùng cosine similarity + ngưỡng 0.85 cứng cho mọi pattern, và
-# WIN_RATE_BY_TF_METHOD bị lệch/lỗi thời so với bản đã sửa look-ahead bias
-# trong V4). Toàn bộ logic nhận diện pattern (Euclidean similarity, ngưỡng
-# calibrate RIÊNG từng pattern qua block-bootstrap, resolve hướng giao dịch
-# có override/momentum...) giờ lấy trực tiếp từ pattern_engine.py -- cùng một
-# "não" mà similarity_pattern_V4.py (giao diện Chart Replay Trainer) đang
-# dùng. File này chỉ còn nhiệm vụ HIỂN THỊ GIAO DIỆN (Streamlit + Plotly).
 from similar_engine import (
     PatternMatcher, WIN_RATE_BY_TF_METHOD, TF_CSV_FILENAMES, _load_price_csv,
 )
